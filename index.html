@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="images/logo.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+#w2:link, #w2:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 70px;
+  position: absolute;
+  left: 500px;
+  top: 480px;
+}
+
+#w2:hover, a:active {
+  background-color: blue;
+
+
+}
+#w3:link, #w3:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 70px;
+  position: absolute;
+  left: 900px;
+  top: 480px;
+}
+
+#w3:hover, a:active {
+  background-color: blue;
+}
+
+
+</style>
+<body>
+    <header>
+
+            <div class="menu">
+                <nav>
+                    <div class="logo">
+                        <a href="#"><img src="logo.png"></a>
+                    </div>
+                    <div class="logo1">
+                        <a href="#"><img src="car1.png"></a>
+                    </div>
+                 <ul>
+                    <li><a href="#"><B>Home</B><i class="fa fa-home" ></i></a></li>
+                    <li><a href="#"><B>Our Sevices</B> </a></li>
+                    </li>
+                    </li>
+                    <li><a href="contact.html"><B>Contacts</B> <i class="fa fa-phone-square"></i> </a></i>
+                    </li>
+                    <li><a href="#"><B>About US</B> <i class="fa fa-users" ></i></a></li>
+                    <li><a href="http://localhost/smart-parking/"><B>Sign-In/Up</B>
+                        <i class="fa fa-address-card" ></a></i>
+                       
+                 </ul>
+          </div>
+          <script type="text/javascript">
+            $(document).ready(function () {
+                $('.menu').click(function () {
+                    $('nav ul').menuClass('active');
+                })
+            })
+        </script>
+        </nav>
+        <div class="parallax">
+        </div>
+        <div class="sign">
+            <b>
+                <h3>Parking Management System</h3>
+            </b>
+            <p> By addict programmer</p>
+        </div>
+<a id="w2" href="http://localhost/Smart-parking/admin_login.php" target="_blank" title="Sign-In As Administrator">Sign-In As Administrator</a>
+<a id="w3" href="http://localhost/Smart-parking/attendant_login.php" target="_blank" title="Sign-In As Sub-Admin">Sign-In As Sub-Administrator</a>
+        <div class="about" id="about-us">
+            <h2>ABOUT US</h2>
+            <div class="col-middle">
+                <h3>PARKING MANAGEMENT SYSTEM</h3>
+                <p>Our project is to build a vehicles parking management
+                     system that enables the time management and control
+                      of vehicles using number plates recognition .
+                       the system that will attract the entry and exits of vehicles 
+                       , maintain a listing of vehicles within the parking lot , 
+                       and determine remain if the parking lot. if the parking lot is full or not.
+                     it will determine the cost of per vehicles according to their time consumption. </p><br>
+                <a href="#"><b>Contact Us</b></a>
+                </div>
+            </div>
+
+        <div class="our-services" id="services">
+            <h2>OUR SERVICES</h2>
+            <div class="services-left">
+                <i class="fa fa-car" aria-hidden="true"></i>
+                <h4>Car/Taxi</h4>
+                <p>You can park your Vechicles with more safely with us.</p>
+            </div>
+            <div class="services-center">
+                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                <h4>MotorBike</h4>
+                <p>All kinds of Motorbikes you can park with us safely.</p>
+            </div>
+            <div class="services-right">
+                <i class="fa fa-bus" aria-hidden="true"></i>
+                <h4>Lorres</h4>
+                <p>park the vechicles with us</p>
+            </div>
+        </div>
+        <div>
+            <div class=" contact-section" id="contact">
+                <h2>CONTACT US</h2>
+        
+                <form class="contact-form" action="mail_handler.php" method="post">
+                    <input type="text" class="contact-form-text" placeholder="Your Name" name="name">
+                    <input type="email" class="contact-form-text" placeholder="Your Email" name="email">
+                    <input type="text" class="contact-form-text" placeholder="Your Phone" name="phone">
+                    <textarea class="contact-form-text" placeholder="Your Message" name="message"></textarea>
+                    <input type="submit" class="contact-form-btn" value="Send Message" name="submit">
+                </form>
+            </div>
+            </div>
+        
+        </header>
+
+        <footer>
+            <div class="trademark">
+                &copy; All Rights Reserved. Designed by: <b>Addict Programmer</b>.
+            </div>
+        </footer>
+</body>
